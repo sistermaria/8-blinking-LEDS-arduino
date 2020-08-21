@@ -1,0 +1,33 @@
+int bluePin=2;
+  int redPin=3;
+  int greenPin=4;
+  int yellowPin=5;
+  int orangePin=6;
+  int blPin=7;
+  int whitePin=8;
+  int rePin=9;
+
+  int d=50;
+
+void setup()
+{
+pinMode(2, OUTPUT);
+pinMode(3, OUTPUT);
+pinMode(4, OUTPUT);
+pinMode(5, OUTPUT);
+pinMode(6, OUTPUT);
+pinMode(7,OUTPUT);
+pinMode(8,OUTPUT);
+  pinMode(9,OUTPUT);
+}
+void loop()
+{
+  for ( int a = 2; a < 10 ; a++ )
+{
+digitalWrite(a, HIGH);
+delay(d);
+digitalWrite(a, LOW);
+delay(d);
+}
+}
+
